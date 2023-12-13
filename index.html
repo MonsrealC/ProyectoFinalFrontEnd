@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2ee0245f3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="wow.min.js"></script>
+    <script>
+      $(function () {
+        $("#slider4").responsiveSlides({
+          auto: false,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $(".events").append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $(".events").append("<li>after event fired.</li>");
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- HEADER & NAVEGADOR 1 -->
+    <header class="cabecera">
+      <div class="ancho conste">
+        <div class="p1">
+          <i class="redesup fa-regular fa-envelope"></i>
+          <h6>Call: (719)445-2808</h6>
+          <i class="redesup fa-solid fa-location-dot"></i>
+          <h6>4576 Mazmorra Road, Glasgow</h6>
+        </div>
+        <div>
+          <i class="redesup fa-brands fa-facebook-f"></i>
+          <i class="redesup fa-brands fa-twitter"></i>
+          <i class="redesup fa-brands fa-youtube"></i>
+          <i class="redesup fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </header>
+    <nav class="navegador ancho">
+      <div class="logo">
+        <figure><img src="imagenes/logo.jpg" alt="" /></figure>
+        <h6>Painting services</h6>
+      </div>
+      <div class="barlupa uno">
+        <i class="lupa fa-solid fa-magnifying-glass"></i>
+        <i id="iconomenu" class="lupa fa-solid fa-bars"></i>
+      </div>
+      <ul id="menu" class="contenedormenu dos">
+        <li><a class="solo" href="#">Home</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+    <!-- HEADER%NAVEGADOR 2 -->
+    <!-- SLIDER  1-->
+    <div class="callbacks_container">
+      <ul class="rslides" id="slider4">
+        <li>
+          <img src="imagenes/home-painter-slider-1.jpg" alt="" />
+          <div class="caption">
+            <h4>Quality painting made easy</h4>
+            <br />
+            <h2 class="titulofont">Call as today (719)-8874-5537</h2>
+            <br /><br />
+            <div>
+              <a class="plano1" href="#">Need emergensy services</a>
+              <a class="plano2" href="#">More about us</a><br /><br />
+            </div>
+
+            <h6>Our expert will solve them in no time</h6>
+          </div>
+        </li>
+        <li>
+          <img src="imagenes/home-painter-slider-2.jpg" alt="" />
+          <div class="caption">
+            <h4>Provading interior and exterior</h4>
+            <br />
+            <h2>Paiting services</h2>
+            <br /><br />
+            <div><a class="plano2" href="#">More about us</a><br /><br /></div>
+          </div>
+        </li>
+        <li>
+          <img src="imagenes/home-painter-slider-3.jpg" alt="" />
+          <div class="caption">
+            <h4>Provading interior and exterior</h4>
+            <br />
+            <h2>Paiting services</h2>
+            <br /><br />
+            <div>
+              <a class="plano1" href="#">Make and appointment</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- SLIDER  2-->
+    <br /><br />
+    <!-- SECCION & WOW -->
+
+    <section class="ancho part3">
+      <h1>
+        PROVIDING INTERIOR AND EXTERIOR <br />
+        PAINTING SERVICES
+      </h1>
+      <figure>
+        <img class="imgi" src="imagenes/zigzag-green-60x13.jpg" alt="" />
+      </figure>
+      <p>
+        We have experience in painting any surface from new constructions to
+        cabinets in commercial properties
+      </p>
+      <br />
+      <div class="omega3">
+        <div class="sec3 wow animate__animated animate__slideInLeft">
+          <figure class="fotocontainer">
+            <img src="imagenes/Depositphotos_82871260_original1.jpg" alt="" />
+          </figure>
+          <br />
+          <a class="btnps" href="#hola">Interior paiting</a>
+          <p>
+            We provide our clients with all the range of services. We will fix
+            any malfunction in record terms so you
+          </p>
+        </div>
+        <div class="sec3 wow animate__animated animate__slideInUp">
+          <figure class="fotocontainer">
+            <img src="imagenes/Depositphotos2.jpg" alt="" />
+          </figure>
+          <br />
+          <a class="btnps" href="#">Exterior paiting</a>
+          <p>
+            We provide our clients with all the range of services. We will fix
+            any malfunction in record terms so you
+          </p>
+        </div>
+        <div class="sec3 wow animate__animated animate__slideInRight">
+          <figure class="fotocontainer">
+            <img src="imagenes/Depositphotos_80535872_original3.jpg" alt="" />
+          </figure>
+          <br />
+          <a class="btnps" href="#">Commercial paiting</a>
+          <p>
+            We provide our clients with all the range of services. We will fix
+            any malfunction in record terms so you
+          </p>
+        </div>
+      </div>
+      <br /><br />
+      <a class="plano3" href="#">See all services</a>
+    </section>
+    <br />
+    <!-- SECCION & WOW 1-->
+
+    <section class="parte4">
+      <article class="ancho">
+        <div class="contenedorpart4">
+          <figure class="saltop">
+            <img src="imagenes/pintir_ll-removebg-preview.png" alt="" />
+          </figure>
+          <div>
+            <h1 class="textogra">
+              Free Estimates Delivered <br />
+              In 24 Hours
+            </h1>
+            <h4 class="textogra2">
+              Painting Services - whatever needs to be painted
+            </h4>
+            <br />
+            <div class="calendario" id="open">
+              <a id="open" class="botongrad" href="#modal"
+                >Make an appoitment</a
+              >
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <div class="contenedor-modal" id="contenedor-modal">
+      <div class="modal">
+        <div class="cerrar" id="close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <p>AGENDA TU VISITA CON NOSOTROS</p>
+        <form action="/procesar_cita" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required />
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required />
+          <label for="fecha">Fecha de la visita:</label>
+          <input type="date" id="fecha" name="fecha" required />
+          <label for="hora">Hora de la visita:</label>
+          <input type="time" id="hora" name="hora" required />
+          <label for="motivo">Motivo de la visita:</label>
+          <textarea id="motivo" name="motivo" rows="4" cols="50"></textarea>
+          <br />
+          <input id="btn-form" type="submit" value="Agendar Cita" />
+        </form>
+      </div>
+    </div>
+    <br /><br />
+    <!-- SECCION & WOW 2-->
+
+    <!-- TABS 1-->
+    <div class="medio wow animate__animated animate__fadeInUp">
+      <h1>Our Projects</h1>
+      <br />
+      <figure>
+        <img class="imgi" src="imagenes/zigzag-green-60x13.jpg" alt="" />
+      </figure>
+    </div>
+    <br />
+    <ul class="tabs wow animate__animated animate__fadeInUp">
+      <li><a href="#tab1">All</a></li>
+      <li><a href="#tab2">Electrical</a></li>
+      <li><a href="#tab3">Heating</a></li>
+      <li><a href="#tab4">Home mantenimence</a></li>
+      <li><a href="#tab5">Paiting</a></li>
+    </ul>
+    <br />
+    <section class="tabii">
+      <article id="tab1" class="contenedores">
+        <div class="normal">
+          <figure class="caja3">
+            <img src="imagenes/tab1.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab1.jpg"
+                data-caption="FOTO 1 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+          <figure class="caja3">
+            <img src="imagenes/tab2.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab2.jpg"
+                data-caption="FOTO 2 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+          <figure class="caja3">
+            <img src="imagenes/tab3.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab3.jpg"
+                data-caption="FOTO 3 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+          <figure class="caja3">
+            <img src="imagenes/tab4.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab4.jpg"
+                data-caption="FOTO 4 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+        </div>
+        <div class="normal">
+          <figure class="caja3">
+            <img src="imagenes/tab5.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab5.jpg"
+                data-caption="FOTO 5 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+          <figure class="caja3">
+            <img src="imagenes/tab6.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab6.jpg"
+                data-caption="FOTO 6 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+          <figure class="caja3">
+            <img src="imagenes/tab7.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab7.jpg"
+                data-caption="FOTO 7 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+          <figure class="caja3">
+            <img src="imagenes/tab8.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab8.jpg"
+                data-caption="FOTO 8 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+        </div>
+      </article>
+      <article id="tab2" class="contenedores">
+        <div class="normal">
+          <figure class="caja3">
+            <img src="imagenes/tab2.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab2.jpg"
+                data-caption="FOTO 2 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+          <figure class="caja3">
+            <img src="imagenes/tab1.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab1.jpg"
+                data-caption="FOTO 1 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+          <figure class="caja3">
+            <img src="imagenes/tab3.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab3.jpg"
+                data-caption="FOTO 3 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+          <figure class="caja3">
+            <img src="imagenes/tab4.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab4.jpg"
+                data-caption="FOTO 4 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+        </div>
+        <div class="normal">
+          <figure class="caja3">
+            <img src="imagenes/tab5.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab5.jpg"
+                data-caption="FOTO 5 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+          <figure class="caja3">
+            <img src="imagenes/tab6.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab6.jpg"
+                data-caption="FOTO 6 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+          <figure class="caja3">
+            <img src="imagenes/tab8.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab8.jpg"
+                data-caption="FOTO 8 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+          <figure class="caja3">
+            <img src="imagenes/tab7.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab7.jpg"
+                data-caption="FOTO 7 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+        </div>
+      </article>
+      <article id="tab3" class="contenedores">
+        <div class="normal">
+          <figure class="caja3">
+            <img src="imagenes/tab3.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab3.jpg"
+                data-caption="FOTO 3 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+          <figure class="caja3">
+            <img src="imagenes/tab5.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab5.jpg"
+                data-caption="FOTO 5 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+          <figure class="caja3">
+            <img src="imagenes/tab8.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab8.jpg"
+                data-caption="FOTO 8 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+        </div>
+      </article>
+      <article id="tab4" class="contenedores">
+        <div class="normal">
+          <figure class="caja3">
+            <img src="imagenes/tab7.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab7.jpg"
+                data-caption="FOTO 7 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+          <figure class="caja3">
+            <img src="imagenes/tab6.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab6.jpg"
+                data-caption="FOTO 6 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+          <figure class="caja3">
+            <img src="imagenes/tab1.jpg" alt="" />
+            <div class="divfiltro">
+              <p>This house was compleatly amintained by our experts</p>
+              <a
+                data-fancybox="gallery"
+                data-src="imagenes/tab1.jpg"
+                data-caption="FOTO 1 GALERIA"
+                class="plano3"
+                href="#"
+                >See Project</a
+              >
+            </div>
+          </figure>
+        </div>
+      </article>
+      <article id="tab5" class="contenedores">
+        <div class="normal">
+          <article class="caja3">
+            <div class="normal">
+              <figure class="caja3">
+                <img src="imagenes/tab2.jpg" alt="" />
+                <div class="divfiltro">
+                  <p>This house was compleatly amintained by our experts</p>
+                  <a
+                    data-fancybox="gallery"
+                    data-src="imagenes/tab2.jpg"
+                    data-caption="FOTO 2 GALERIA"
+                    class="plano3"
+                    href="#"
+                    >See Project</a
+                  >
+                </div>
+              </figure>
+              <figure class="caja3">
+                <img src="imagenes/tab8.jpg" alt="" />
+                <div class="divfiltro">
+                  <p>This house was compleatly amintained by our experts</p>
+                  <a
+                    data-fancybox="gallery"
+                    data-src="imagenes/tab8.jpg"
+                    data-caption="FOTO 8 GALERIA"
+                    class="plano3"
+                    href="#"
+                    >See Project</a
+                  >
+                </div>
+              </figure>
+              <figure class="caja3">
+                <img src="imagenes/tab5.jpg" alt="" />
+                <div class="divfiltro">
+                  <p>This house was compleatly amintained by our experts</p>
+                  <a
+                    data-fancybox="gallery"
+                    data-src="imagenes/tab5.jpg"
+                    data-caption="FOTO 5 GALERIA"
+                    class="plano3"
+                    href="#"
+                    >See Project</a
+                  >
+                </div>
+              </figure>
+            </div>
+          </article>
+        </div>
+      </article>
+    </section>
+    <br />
+    <!-- TABS 2 -->
+
+    <!-- Carousel 1-->
+    <div class="medio">
+      <h1>Our Team of professionals</h1>
+      <br />
+      <figure>
+        <img class="imgi" src="imagenes/zigzag-green-60x13.jpg" alt="" />
+      </figure>
+    </div>
+    <br />
+
+    <section id="carousel" class="">
+      <div id="slide-container">
+        <article class="slide" data-slideIndex="0">
+          <figure class="fotoc">
+            <img src="imagenes/testi-1-2.jpg" alt="" />
+          </figure>
+          <i class="fa-solid fa-check-double iconov"></i>
+          <p>
+            Profesor de pintura de casas con enfoque práctico. Instruyo en
+            técnicas, colores y procesos, fomentando la creatividad y la
+            habilidad. Guiando a estudiantes hacia proyectos exitosos y hogares
+            vibrantes
+          </p>
+          <h3>Adam smith</h3>
+          <p class="colorv">Teacher</p>
+        </article>
+        <article class="slide" data-slideIndex="1">
+          <figure class="fotoc">
+            <img src="imagenes/testi-2-3.jpg" alt="" />
+          </figure>
+          <i class="fa-solid fa-check-double iconov"></i>
+          <p>
+            "Experimentado manager de pintura de casas, especializado en
+            coordinar equipos y proyectos para lograr resultados estéticos y
+            duraderos. Experto en selección de colores, técnicas avanzadas y
+            cumplimiento de plazos. Transformo espacios con calidad y estilo
+            excepcionales, superando las expectativas del cliente
+          </p>
+          <h3>David Jones</h3>
+          <p class="colorv">Manager</p>
+        </article>
+        <article class="slide" data-slideIndex="2">
+          <figure class="fotoc">
+            <img src="imagenes/testi-4-3.jpg" alt="" />
+          </figure>
+          <i class="fa-solid fa-check-double iconov"></i>
+          <p>
+            Contador especializado en pintura, optimizo costos y presupuestos
+            para proyectos eficientes. Aseguro cumplimiento normativo y
+            rentabilidad en cada litro de color. Números precisos para
+            resultados impactantes
+          </p>
+          <h3>Mag richards</h3>
+          <p class="colorv">Accountain</p>
+        </article>
+        <div class="slide-buttons">
+          <a href="#" id="back-button" class="back"
+            ><i class="fa-solid fa-circle-arrow-left"></i
+          ></a>
+          <a href="#" id="forward-button" class="back"
+            ><i class="fa-solid fa-circle-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <div class="slide-indicators">
+      <div class="slide-indicator active"></div>
+      <div class="slide-indicator"></div>
+      <div class="slide-indicator"></div>
+    </div>
+    <!-- carousel 2 -->
+
+    <section class="parte7">
+      <article class="ancho cmp">
+        <div class="contenedorpart4">
+          <div class="texmedio">
+            <h1 class="textogra">
+              Get Started Now, Schedule Your Free Estimate
+            </h1>
+            <h4 class="textogra2">
+              We have experience in painting any surface from new constructions
+              to cabinets in commercial properties
+            </h4>
+            <br />
+            <div class="calendario" id="open">
+              <a id="open" class="botongrad" href="#modal"
+                >Make an appoitment</a
+              >
+            </div>
+          </div>
+          <!-- <figure class="saltop">
+            <img src="imagenes/pintor-removebg-preview.png" alt="" />
+          </figure> -->
+        </div>
+      </article>
+    </section>
+    <br />
+
+    <!-- ACORDEON 1 -->
+
+    <section class="ancho">
+      <p class="tituloAcordeon">We provide you with</p>
+      <article class="contenedor">
+        <div class="contenedor-acordeon wow animate__animated animate__fadeInLeft">
+          <div class="acordeon">
+            <div class="acordeon-titulo">
+              <i class="icono-abajo fa-solid fa-circle-arrow-down"></i>
+              <i class="icono-arriba fa-solid fa-circle-arrow-up"></i>
+              <p>Experts in paint and color varieties</p>
+            </div>
+            <div class="contenido">
+              <figure>
+                <img src="imagenes/pintor-removebg-preview.png" alt="" />
+              </figure>
+              <p>
+                Ability to capture subtle details in the environment,
+                authentically depicting elements such as light and texture.
+              </p>
+            </div>
+          </div>
+          <div class="acordeon">
+            <div class="acordeon-titulo">
+              <i class="icono-abajo fa-solid fa-circle-arrow-down"></i>
+              <i class="icono-arriba fa-solid fa-circle-arrow-up"></i>
+              <p>Creativity in each person</p>
+            </div>
+
+            <div class="contenido">
+              <figure>
+                <img src="imagenes/pintir_ll-removebg-preview.png" alt="" />
+              </figure>
+              <p>
+                Ability to conceive original ideas and express a unique vision
+                on canvas, experimenting with diverse styles and themes
+              </p>
+            </div>
+          </div>
+          <div class="acordeon">
+            <div class="acordeon-titulo">
+              <i class="icono-abajo fa-solid fa-circle-arrow-down"></i>
+              <i class="icono-arriba fa-solid fa-circle-arrow-up"></i>
+              <p>Persistence and patience</p>
+            </div>
+
+            <div class="contenido">
+              <figure>
+                <img
+                  src="imagenes/curso-online-pintor_l_primaria_1-removebg-preview.png"
+                  alt=""
+                />
+              </figure>
+              <p>
+                Determination to overcome challenges, hone skills and dedicate
+                the necessary time to long-term artistic projects.
+              </p>
+            </div>
+          </div>
+          <div class="acordeon">
+            <div class="acordeon-titulo">
+              <i class="icono-abajo fa-solid fa-circle-arrow-down"></i>
+              <i class="icono-arriba fa-solid fa-circle-arrow-up"></i>
+              <p>Technical ability</p>
+            </div>
+            <div class="contenido">
+              <figure>
+                <img
+                  src="imagenes/pintores-para-particulares-removebg-preview.png"
+                  alt=""
+                />
+              </figure>
+              <p>
+                Mastery of painting techniques, knowledge of materials and skill
+                in the application of brushes, allowing the precise execution of
+                the artistic vision.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video wow animate__animated animate__fadeInRight">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/f2jUpqIOI1E?si=Ig6ejC2gfbfTJY52"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </article>
+    </section><br><br>
+    <!-- ACORDEON 2 -->
+
+    <section class="PieF">
+      <div class="gestor ancho">
+        <article class="acercade">
+          <h3>About</h3>
+          <p>JohnnyGo is a large company with more than 10 years of experience in helping people with their house problems and malfunctions. During our work we helped a huge number of people and have garnered a reputation as a stable company with a team of real skilled experts who don’t fear any difficulties.</p>
+
+        </article>
+
+        <article class="servicios">
+          <h3>Services</h3>
+          <div class="miniop">
+            <i class="icono3 fa-solid fa-check"></i>
+            <a href="#">Electrical</a>
+          </div>
+          <div class="miniop">
+            <i class="icono3 fa-solid fa-check"></i>
+            <a href="#">Pumbling</a>
+          </div>
+          <div class="miniop">
+            <i class="icono3 fa-solid fa-check"></i>
+            <a href="#">Heating</a>
+          </div>
+          <div class="miniop">
+            <i class="icono3 fa-solid fa-check"></i>
+            <a href="#">Paiting</a>
+          </div>
+          <div class="miniop">
+            <i class="icono3 fa-solid fa-check"></i>
+            <a class="smp" href="#">Garden</a>
+          </div>
+          <div class="miniop">
+            <i class="icono3 fa-solid fa-check"></i>
+            <a href="#">Home mantenince</a>
+          </div>
+        </article>
+
+        <article>
+          <div class="miniop">
+            <figure class="fotp">
+              <img src="imagenes/tab1.jpg" alt="">
+            </figure>
+            <a href="#">Do not toch be aware</a>
+          </div>
+          <div class="miniop">
+            <figure class="fotp">
+              <img src="imagenes/tab6.jpg" alt="">
+            </figure>
+            <a href="#">Tips for begeing a superpintor</a>
+          </div>
+          <div class="miniop">
+            <figure class="fotp">
+              <img src="imagenes/tab7.jpg" alt="">
+            </figure>
+            <a href="#">Safe during season work</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+<footer class="ancho">
+  <div  class="bajo">
+    <div>
+      <h5>OscarMonsreal® All rights reserved</h5>
+    </div>
+    <div>
+      <i class="redesup fa-brands fa-facebook-f"></i>
+      <i class="redesup fa-brands fa-twitter"></i>
+      <i class="redesup fa-brands fa-youtube"></i>
+      <i class="redesup fa-brands fa-instagram"></i>
+    </div>
+  </div>
+
+</footer>
+
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {});
+    </script>
+
+    <script src="carrousel.js"></script>
+    <script>
+      $(".contenedores").hide();
+      $("ul.tabs li:first").addClass("active").show();
+      $(".contenedores:first").show();
+
+      //eventos click botones
+      $("ul.tabs li").click(function () {
+        $("ul.tabs li").removeClass("active");
+        $(this).addClass("active");
+        $(".contenedores").hide();
+
+        var activeTab = $(this).find("a").attr("href");
+        $(activeTab).fadeIn();
+        return false;
+      });
+    </script>
+    <!-- Scriptnavegador  -->
+    <script>
+      $("#iconomenu").click(function () {
+        $("#menu").slideToggle();
+      });
+    </script>
+    <!-- Scriptnavegador  -->
+    <script>
+      new WOW().init();
+    </script>
+
+    <script>
+      var fondo = document.getElementById("contenedor-modal");
+      $("#open").click(function () {
+        fondo.style.display = "flex";
+      });
+
+      $("#close").click(function () {
+        fondo.style.display = "none";
+      });
+
+      window.onclick = function (event) {
+        if (event.target == fondo) {
+          fondo.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".acordeon-titulo").click(function () {
+          var icon = $(this).find(".icon");
+          var content = $(this).next(".contenido");
+
+          content.slideToggle("fast", function () {
+            $(this)
+              .prev(".acordeon-titulo")
+              .toggleClass("active", $(this).is(":visible"));
+          });
+
+          $(".acordeon-titulo")
+            .not(this)
+            .removeClass("active")
+            .find(".icon")
+            .text("+")
+            .end()
+            .next(".contenido")
+            .slideUp("fast");
+        });
+      });
+    </script>
+      <script>
+        
+      </script>
+
+  </body>
+</html>
